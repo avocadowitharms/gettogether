@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & FAQ - Together App</title>
+  <meta name="description" content="Get help with the Together focus app. Read FAQs about ADHD body doubling, peer matching, Liam the virtual companion, privacy settings, and iCloud sync.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/together_icon.png" type="image/png">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo-link">
+        <img src="assets/together_icon.png" alt="Together Logo" class="logo-img">
+        <span>Together</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../index.html#science" class="nav-link">The Science</a></li>
+          <li><a href="support.html" class="nav-link active">Support & FAQ</a></li>
+          <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html" class="nav-link">Terms of Use</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <!-- Material 3 Design Switch for Theme Toggle -->
+        <label class="m3-switch" aria-label="Toggle dark/light theme">
+          <input type="checkbox" id="themeToggleCheckbox">
+          <span class="m3-switch-track">
+            <span class="m3-switch-thumb">
+              <span class="material-symbols-outlined sun-icon">light_mode</span>
+              <span class="material-symbols-outlined moon-icon">dark_mode</span>
+            </span>
+          </span>
+        </label>
+        <a href="../index.html#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SUPPORT CONTENT -->
+  <main class="main-content">
+    
+    <!-- SUPPORT HERO -->
+    <section class="support-hero">
+      <h1>Support Center</h1>
+      <p>Have questions about virtual body doubling, connection privacy, or subscription features? Explore our FAQs below or contact our team directly.</p>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <div class="support-grid">
+      
+      <!-- FAQ Accordions -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is ADHD body doubling?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Body doubling is a productivity strategy widely utilized by individuals with ADHD, executive dysfunction, or general task-activation barriers. It involves working on tasks (like studying, writing, doing admin, or cleaning) in the presence of another person.</p>
+                <p>This simple social presence serves as an anchor for the wandering mind, reducing distractibility, increasing motivation, and lowering the neurological "start friction" of tasks without feeling pressuring.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does peer-matching work? Do I have to talk?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Together features on-demand co-working rooms. Simply choose a task, choose a duration (25, 45, or 60 minutes), and choose a connection preference. The system matches you with a global partner starting a task in less than 10 seconds.</p>
+                <p><strong>You do not have to speak or show your camera.</strong> Together supports three modes:
+                  <ul>
+                    <li><strong>Silent:</strong> Perfect for quiet companionship. You work in silence with a simple text indicator that your partner is online and working.</li>
+                    <li><strong>Voice:</strong> Best for checking in verbally, announcing goals, or receiving quick encouraging words.</li>
+                    <li><strong>Camera:</strong> Traditional visual body doubling, creating a shared study-room atmosphere.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Who is Liam, the Virtual Focus Companion?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Liam is our built-in virtual focus companion, ideal for users experiencing social anxiety or who prefer a quiet session without peer matching.</p>
+                <p><strong>Liam is not an AI:</strong> He is a pre-programmed virtual study partner. All check-ins and prompts are processed locally on your device timer. Together does not call external generative AI APIs or transmit your focus data, prompts, or notes to any cloud artificial intelligence services.</p>
+                <p>Liam is programmed to check in gently every 20 minutes (via quiet voice prompt or card alert, depending on your choice) to ask how your task is progressing, disrupting distraction loops.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are my camera and microphone connection data protected?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Together uses peer-to-peer WebRTC connections routed through secure LiveKit media routers. All live voice and video streams are encrypted in transit using industry-standard **DTLS-SRTP encryption**, protecting you from eavesdropping.</p>
+                <p><strong>No recording occurs:</strong> Audio and video data is streamed in real-time between devices and is never cached, processed, or saved to servers. Metadata (such as focus category and match duration) is stored locally on your device and backed up under your control to iCloud.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does iCloud backup work?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Together leverages secure iCloud persistence. When enabled in your Profile, your local focus configurations, completed session history, active streaks, longest streak, and custom tasks are automatically backed up to your personal iCloud container.</p>
+                <p>This ensures your progress is safely stored and matches up instantly across your iPhone, iPad, and Apple Silicon Mac without requiring you to create an external account.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is there a premium version?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Together is free to download and use for standard solo sessions and peer focus sessions. We offer a premium subscription ("Together Premium") that unlocks unlimited focus rooms with Liam, detailed focus statistics charts, and custom task icons.</p>
+                <p>Subscriptions are securely managed through Apple's App Store and Google Play billing, processed via RevenueCat integrations.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Support Form -->
+      <section class="contact-section glass-card" id="contact-container">
+        <h2>Quick Support</h2>
+        <p class="contact-subtitle">Need help? Submit a support request and our team will get back to you within 24 hours.</p>
+        
+        <form class="support-form" id="supportForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="emailAddr">Email Address</label>
+            <input type="email" id="emailAddr" class="form-control" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="supportTopic">Topic</label>
+            <select id="supportTopic" class="form-control" style="background: var(--bg-color); cursor: pointer;" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="general">General Inquiry</option>
+              <option value="billing">Subscription & Billing</option>
+              <option value="bug">Report a Bug</option>
+              <option value="user">Report a Focus Match Partner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="supportMsg">Message</label>
+            <textarea id="supportMsg" class="form-control" placeholder="Describe your issue or question in detail..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Submit Support Request</button>
+        </form>
+
+        <div class="form-success-container" id="supportSuccess">
+          <div class="success-icon-badge">
+            <span class="material-symbols-outlined" style="font-size: 28px; width: 28px; height: 28px;">check</span>
+          </div>
+          <h3>Ticket Created</h3>
+          <p>We've received your request! A confirmation email has been sent. Your support ticket ID is: <strong id="ticketIdVal" style="color: var(--primary);">#TGT-0000</strong></p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Average response time is currently under 12 hours.</p>
+          <button class="btn btn-secondary btn-sm" id="resetFormBtn" style="margin-top: 1rem;">Submit Another Ticket</button>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <footer>
+      <span>&copy; 2026 Ava Thalheim</span>
+      <nav class="footer-links" aria-label="Legal and support">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-use.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="https://avathalheim.dev/" target="_blank" rel="noopener noreferrer">Creator</a>
+      </nav>
+      <div class="footer-actions">
+        <a class="coffee-link" href="https://buymeacoffee.com/avocadowita" target="_blank" rel="noopener noreferrer">
+          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-1h2c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-3h-2V5h2c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2zM4 19h16v2H4v-2z"/></svg>
+          <span>Buy me a coffee</span>
+        </a>
+        <a class="social-icon-link instagram-icon-link" href="https://www.instagram.com/flowtimefocus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <linearGradient id="instagram-icon-gradient" x1="4" y1="22" x2="20" y2="2" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ffdc80"/>
+                <stop offset="0.32" stop-color="#f77737"/>
+                <stop offset="0.6" stop-color="#e1306c"/>
+                <stop offset="1" stop-color="#833ab4"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#instagram-icon-gradient)" d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm0 2c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3V7c0-1.65-1.35-3-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+          </svg>
+        </a>
+        <a class="social-icon-link x-icon-link" href="https://x.com/Flowtime_app" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2H21l-6.04 6.9L22 22h-5.63l-4.41-5.77L6.91 22H4.15l6.46-7.38L3.86 2h5.77l3.99 5.27L18.24 2zm-.97 17.69h1.53L8.79 4.19H7.15l10.12 15.5z"/></svg>
+        </a>
+        <a class="top-link" href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
+      </div>
+    </footer>
+  </footer>
+
+  <script>
+    // Theme Switcher Logic with Material 3 Switch
+    const themeToggleCheckbox = document.getElementById('themeToggleCheckbox');
+    
+    function getThemePreference() {
+      if (localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      return 'light';
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      themeToggleCheckbox.checked = (theme === 'dark');
+    }
+
+    const activeTheme = getThemePreference();
+    setTheme(activeTheme);
+
+    themeToggleCheckbox.addEventListener('change', () => {
+      const newTheme = themeToggleCheckbox.checked ? 'dark' : 'light';
+      setTheme(newTheme);
+    });
+
+    // Accordion Logic
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      btn.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+          otherItem.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Quick Support Form Submit Mock Logic
+    const supportForm = document.getElementById('supportForm');
+    const supportSuccess = document.getElementById('supportSuccess');
+    const ticketIdVal = document.getElementById('ticketIdVal');
+    const resetFormBtn = document.getElementById('resetFormBtn');
+
+    supportForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const randomTicketNum = Math.floor(1000 + Math.random() * 9000);
+      ticketIdVal.textContent = `#TGT-${randomTicketNum}`;
+
+      supportForm.style.transition = 'opacity 0.25s ease';
+      supportForm.style.opacity = '0';
+      
+      setTimeout(() => {
+        supportForm.style.display = 'none';
+        supportSuccess.classList.add('active');
+      }, 250);
+    });
+
+    resetFormBtn.addEventListener('click', () => {
+      supportForm.reset();
+      supportSuccess.classList.remove('active');
+      supportForm.style.display = 'flex';
+      supportForm.style.opacity = '1';
+    });
+  </script>
+</body>
+</html>

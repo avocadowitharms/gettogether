@@ -55,16 +55,17 @@
           <li><a href="#info-collect" class="toc-link">2. What We Collect</a></li>
           <li><a href="#info-use" class="toc-link">3. How We Use It</a></li>
           <li><a href="#media-processing" class="toc-link">4. Audio & Video Privacy</a></li>
-          <li><a href="#icloud-backup" class="toc-link">5. iCloud Sync & Backup</a></li>
-          <li><a href="#third-party" class="toc-link">6. Third-Party Services</a></li>
-          <li><a href="#contact" class="toc-link">7. Contact Information</a></li>
+          <li><a href="#moderation-reports" class="toc-link">5. Camera Reports & Proof Clips</a></li>
+          <li><a href="#icloud-backup" class="toc-link">6. iCloud Sync & Backup</a></li>
+          <li><a href="#third-party" class="toc-link">7. Third-Party Services</a></li>
+          <li><a href="#contact" class="toc-link">8. Contact Information</a></li>
         </ul>
       </aside>
 
       <!-- Policy Text Content -->
       <article class="policy-body">
         <h1>Privacy Policy</h1>
-        <div class="policy-date">Last Updated: July 7, 2026</div>
+        <div class="policy-date">Last Updated: July 12, 2026</div>
 
         <section class="policy-section" id="introduction">
           <h2>1. Introduction</h2>
@@ -106,15 +107,28 @@
             <strong>WebRTC Connection & Security:</strong> Peer focus sessions utilize the open-source WebRTC protocol to establish a direct, real-time media connection between matching participants. The audio and video channels are protected using **DTLS (Datagram Transport Layer Security)** and **SRTP (Secure Real-time Transport Protocol)**, meaning all streams are encrypted end-to-end in transit between your devices.
           </p>
           <p>
-            <strong>Ephemerality is absolute:</strong> Together **does not store, record, analyze, or monitor** any video feeds or audio logs on any cloud database. When firewalls block direct connection, streams are routed ephemerally through LiveKit servers. LiveKit acts purely as an in-memory packet router (SFU) and does not inspect the encrypted payload or write media packets to disk.
+            <strong>Live session ephemerality:</strong> Together does not store, record, analyze, or monitor ordinary video feeds or audio logs. When firewalls block direct connection, streams are routed ephemerally through LiveKit servers. LiveKit acts as an in-memory packet router (SFU) and does not inspect the encrypted payload or write media packets to disk.
+          </p>
+          <p>
+            <strong>Report exception:</strong> If a camera-session report is submitted, Together attempts to capture a short proof clip from the active session and sends it to Together moderation storage for human review, as described below.
           </p>
           <p>
             Sessions exist solely in real-time. The moment you press "Leave" or your focus timer finishes, the connection terminates instantly, and no digital trace remains. Camera and microphone access can be muted or completely disabled in-app at any time.
           </p>
         </section>
 
+        <section class="policy-section" id="moderation-reports">
+          <h2>5. Camera Reports & Proof Clips</h2>
+          <p>
+            If one user reports another during a camera session, Together automatically attempts to capture a short 2-second proof video from the active session and upload it to private Together moderation storage for human review. The report includes both users’ account IDs, display names, the session task, planned duration, elapsed time, connection style, session type, report reason, moderation status, and timestamps.
+          </p>
+          <p>
+            Proof clips and report metadata are used only to review abuse reports, enforce restrictions, protect users, and keep partner sessions safe. They are not used for advertising, public sharing, or unrelated analytics. Confirmed first-time abuse may result in a 30-day restriction from camera and partner services; repeat abuse may result in a permanent restriction.
+          </p>
+        </section>
+
         <section class="policy-section" id="icloud-backup">
-          <h2>5. iCloud Sync & Backup</h2>
+          <h2>6. iCloud Sync & Backup</h2>
           <p>
             Together does not maintain a custom centralized account database. Instead, we use your device's native local storage and Apple's secure iCloud framework for data synchronization.
           </p>
@@ -124,7 +138,7 @@
         </section>
 
         <section class="policy-section" id="third-party">
-          <h2>6. Third-Party Services</h2>
+          <h2>7. Third-Party Services</h2>
           <p>We work with trusted infrastructure providers to deliver reliable, on-demand co-working:</p>
           <ul>
             <li><strong>LiveKit:</strong> Used to establish real-time, low-latency audio/video routing between matching peers. Data streams are processed temporarily on LiveKit nodes in memory and are never written to disk.</li>
@@ -133,7 +147,7 @@
         </section>
 
         <section class="policy-section" id="contact">
-          <h2>7. Contact Information</h2>
+          <h2>8. Contact Information</h2>
           <p>
             If you have any questions about this Privacy Policy, your data permissions, or our body doubling infrastructure, feel free to submit a support ticket via our <a href="support.html">Support Center</a> or email us directly at:
           </p>

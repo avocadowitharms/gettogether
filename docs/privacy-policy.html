@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Together App</title>
   <meta name="description" content="Read the Privacy Policy for Together. Learn about peer-to-peer video streaming privacy, local focus configurations, iCloud backups, and data retention.">
+  <link rel="canonical" href="https://gettogether.app/docs/privacy-policy.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="assets/together_icon.png" type="image/png">
 </head>
@@ -20,6 +21,7 @@
       <nav>
         <ul class="nav-menu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../learn/index.html" class="nav-link">Learn</a></li>
           <li><a href="../index.html#science" class="nav-link">The Science</a></li>
           <li><a href="support.html" class="nav-link">Support & FAQ</a></li>
           <li><a href="privacy-policy.html" class="nav-link active">Privacy Policy</a></li>
@@ -73,76 +75,72 @@
             Welcome to Together. We value the trust you place in us to safeguard your focus and co-working environments. We recognize that virtual body doubling requires sharing focus spaces, and we are committed to ensuring your personal data remains private and protected.
           </p>
           <p>
-            This Privacy Policy explains how Together collects, processes, and stores your information. Our core philosophy is data minimization: we only request permissions necessary to deliver our body doubling matches and optional Device AI prompts on supported Apple devices, and we do not monitor or save your focus interactions.
+            This Privacy Policy explains how Together collects, processes, and stores your information. Our core philosophy is data minimization: we only request permissions necessary to deliver our body doubling matches and Focus Spaces, and we do not monitor or save your focus interactions.
           </p>
         </section>
 
-        <section class="policy-section" id="info-collect">
-          <h2>2. Information We Collect</h2>
-          <p>Together functions as a privacy-respecting application. We collect minimal telemetry to keep the app operational:</p>
+        <section class="policy-section" id="cloud-truth">
+          <h2>2. Cloud Database & Row-Level Security (RLS)</h2>
+          <p>
+            For signed-in Supabase users, restrictions, blocks, reports, friends, profile/history/settings, and friend visibility settings are cloud-backed using Supabase database tables protected by strict <strong>Row-Level Security (RLS)</strong>. Local profile state no longer decides restriction or friend truth.
+          </p>
+          <p>
+            Active account restrictions are checked directly from Supabase before enabling or initiating partner sessions.
+          </p>
+        </section>
+
+        <section class="policy-section" id="screenshot-protection">
+          <h2>3. Native Screenshot Protection</h2>
+          <p>
+            Partner sessions activate native operating system screen protection to guard visual privacy:
+          </p>
           <ul>
-            <li><strong>Display Name & Profile Data:</strong> When starting the application, you can create a local profile with a display name (e.g. "John" or "StudyCoder"). This name is visible to peers during matching.</li>
-            <li><strong>Focus Session Telemetry:</strong> We log basic, non-identifiable session data (duration, selected task category like "Coding" or "Study", and connection style). This is aggregated to show streaks and progress.</li>
-            <li><strong>Subscription Status:</strong> If you upgrade to Together Premium, billing states and subscription entitlements are tracked anonymously using transaction tokens. We do not collect credit cards or bank details.</li>
+            <li><strong>iOS Protection:</strong> Detects screenshot attempts during active partner sessions.</li>
+            <li><strong>Android Protection:</strong> Natively blocks screenshot capture and listens for Android 14+ screen capture callbacks where available.</li>
+            <li><strong>Automated Restriction:</strong> Repeated screenshot attempts automatically create a 4-hour partner-session restriction to prevent privacy violations.</li>
           </ul>
-        </section>
-
-        <section class="policy-section" id="info-use">
-          <h2>3. How We Use Information</h2>
-          <p>We use the collected information exclusively to provide and improve the co-working service:</p>
-          <ul>
-            <li>To match you with peer body doubles starting similar focus intervals.</li>
-            <li>To track your local focus streaks and render personal history reports in your app dashboard.</li>
-            <li>To validate billing entitlements for premium focus features.</li>
-            <li>We do NOT sell, license, or trade your data to third parties, and we do not use tracking SDKs for advertisement profiling.</li>
-          </ul>
-        </section>
-
-        <section class="policy-section" id="media-processing">
-          <h2>4. Audio & Video Privacy</h2>
-          <p>
-            Together supports voice and camera co-working to replicate real-life visual body-doubling. These connection styles require microphone and camera permissions.
-          </p>
-          <p>
-            <strong>WebRTC Connection & Security:</strong> Peer focus sessions utilize the open-source WebRTC protocol to establish a direct, real-time media connection between matching participants. The audio and video channels are protected using **DTLS (Datagram Transport Layer Security)** and **SRTP (Secure Real-time Transport Protocol)**, meaning all streams are encrypted end-to-end in transit between your devices.
-          </p>
-          <p>
-            <strong>Live session ephemerality:</strong> Together does not store, record, analyze, or monitor ordinary video feeds or audio logs. When firewalls block direct connection, streams are routed ephemerally through LiveKit servers. LiveKit acts as an in-memory packet router (SFU) and does not inspect the encrypted payload or write media packets to disk.
-          </p>
-          <p>
-            <strong>Report exception:</strong> If a camera-session report is submitted, Together attempts to capture a short proof clip from the active session and sends it to Together moderation storage for human review, as described below.
-          </p>
-          <p>
-            Sessions exist solely in real-time. The moment you press "Leave" or your focus timer finishes, the connection terminates instantly, and no digital trace remains. Camera and microphone access can be muted or completely disabled in-app at any time.
-          </p>
         </section>
 
         <section class="policy-section" id="moderation-reports">
-          <h2>5. Camera Reports & Proof Clips</h2>
+          <h2>4. Structured Safety Reports & Evidence Storage</h2>
           <p>
-            If one user reports another during a camera session, Together automatically attempts to capture a short 2-second proof video from the active session and upload it to private Together moderation storage for human review. The report includes both users’ account IDs, display names, the session task, planned duration, elapsed time, connection style, session type, report reason, moderation status, and timestamps.
+            Together provides a structured safety reporting system. Reports include typed reasons: <em>under 18</em>, <em>harassment</em>, <em>sexual content</em>, <em>threats</em>, <em>spam/scam</em>, or <em>other safety concern</em>.
           </p>
           <p>
-            Proof clips and report metadata are used only to review abuse reports, enforce restrictions, protect users, and keep partner sessions safe. They are not used for advertising, public sharing, or unrelated analytics. Confirmed first-time abuse may result in a 30-day restriction from camera and partner services; repeat abuse may result in a permanent restriction.
+            Submitting a report immediately leaves the media room first so the partner is notified, submits the report, and restricts the reported user.
+          </p>
+          <p>
+            <strong>Evidence handling:</strong> For camera-session reports, Together captures a short proof clip that is uploaded securely to Supabase storage. Local temporary evidence files are deleted immediately after the upload attempt, and local file paths are never stored in database report rows. Report restrictions are executed via constrained database Remote Procedure Calls (RPCs) rather than broad client write privileges.
           </p>
         </section>
 
-        <section class="policy-section" id="icloud-backup">
-          <h2>6. iCloud Sync & Backup</h2>
+        <section class="policy-section" id="blocking-privacy">
+          <h2>5. Explicit Blocking & Friend Visibility Controls</h2>
           <p>
-            Together does not maintain a custom centralized account database. Instead, we use your device's native local storage and Apple's secure iCloud framework for data synchronization.
+            <strong>Explicit Blocking:</strong> Choosing "Block User" creates an explicit database block row. Matchmakers query active block rows at session initiation and exclude blocked users from pairing. Reporting no longer creates hidden block rows.
           </p>
           <p>
-            If iCloud Sync is enabled, your focus history, custom tasks, streaks, and settings are uploaded directly to your private iCloud container. This data is fully encrypted and remains under your control; Together developers cannot access or read your iCloud files. You can disable iCloud backup at any time from your device's settings.
+            <strong>Friend & Streak Controls:</strong> Friend requests and accepted friends are fetched from Supabase RLS tables. Users can disable receiving friend requests and choose to publicly hide their focus streak.
+          </p>
+        </section>
+
+        <section class="policy-section" id="media-permissions">
+          <h2>6. Media Permissions & Account Cleanup (Right to Erasure)</h2>
+          <p>
+            <strong>Authenticated Media Access:</strong> Camera and voice sessions require explicit device hardware permissions and cloud user sign-in. LiveKit media identity tokens are validated before voice or camera partner sessions begin.
+          </p>
+          <p>
+            <strong>Account Cleanup & Erasure:</strong> Account deletion purges all local device profile data and permanently deletes the Supabase authentication user along with associated cloud data cleanup paths.
           </p>
         </section>
 
         <section class="policy-section" id="third-party">
-          <h2>7. Third-Party Services</h2>
-          <p>We work with trusted infrastructure providers to deliver reliable, on-demand co-working:</p>
+          <h2>7. Infrastructure & Data Processors</h2>
+          <p>We work with trusted infrastructure providers to deliver reliable, safe co-working:</p>
           <ul>
-            <li><strong>LiveKit:</strong> Used to establish real-time, low-latency audio/video routing between matching peers. Data streams are processed temporarily on LiveKit nodes in memory and are never written to disk.</li>
-            <li><strong>RevenueCat:</strong> Handles premium subscription licensing. It matches transaction tokens to unlock stats and optional Device AI access on supported Apple devices, without collecting your direct financial details.</li>
+            <li><strong>Supabase:</strong> Cloud database, authentication, and encrypted storage provider enforcing Row-Level Security (RLS) and constrained RPC safety functions.</li>
+            <li><strong>LiveKit:</strong> Real-time, low-latency audio/video routing. Media streams are processed ephemerally in memory with DTLS-SRTP encryption and are never written to disk.</li>
+            <li><strong>RevenueCat:</strong> Handles premium subscription licensing by validating transaction tokens without collecting direct financial details.</li>
           </ul>
         </section>
 
@@ -176,22 +174,6 @@
         <a class="coffee-link" href="https://buymeacoffee.com/avocadowita" target="_blank" rel="noopener noreferrer">
           <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-1h2c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-3h-2V5h2c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2zM4 19h16v2H4v-2z"/></svg>
           <span>Buy me a coffee</span>
-        </a>
-        <a class="social-icon-link instagram-icon-link" href="https://www.instagram.com/flowtimefocus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true">
-            <defs>
-              <linearGradient id="instagram-icon-gradient" x1="4" y1="22" x2="20" y2="2" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#ffdc80"/>
-                <stop offset="0.32" stop-color="#f77737"/>
-                <stop offset="0.6" stop-color="#e1306c"/>
-                <stop offset="1" stop-color="#833ab4"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#instagram-icon-gradient)" d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm0 2c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3V7c0-1.65-1.35-3-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
-          </svg>
-        </a>
-        <a class="social-icon-link x-icon-link" href="https://x.com/Flowtime_app" target="_blank" rel="noopener noreferrer" aria-label="X">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2H21l-6.04 6.9L22 22h-5.63l-4.41-5.77L6.91 22H4.15l6.46-7.38L3.86 2h5.77l3.99 5.27L18.24 2zm-.97 17.69h1.53L8.79 4.19H7.15l10.12 15.5z"/></svg>
         </a>
         <a class="top-link" href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
       </div>

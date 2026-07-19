@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support & FAQ - Together App</title>
-  <meta name="description" content="Get help with the Together focus app. Read FAQs about ADHD body doubling, peer matching, Device AI, privacy settings, subscriptions, and focus history.">
+  <meta name="description" content="Get help with the Together focus app. Read FAQs about ADHD body doubling, peer matching, Focus Spaces, privacy settings, subscriptions, and focus history.">
+  <link rel="canonical" href="https://gettogether.app/docs/support.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="assets/together_icon.png" type="image/png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is ADHD body doubling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Body doubling is a productivity strategy for ADHD and executive dysfunction where you work alongside another person to foster quiet social accountability, reduce start friction, and maintain task focus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What session types does Together support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Together supports three distinct session types: Solo Focus Sessions with timer & task planning, 1:1 Live Body Doubling (Silent, Voice, or Camera), and 24/7 prerecorded Focus Spaces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are Focus Spaces?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Focus Spaces are instant, 24/7 prerecorded body-doubling environments (such as someone studying or working at a desk). They provide instant visual presence without waiting for a live partner or feeling social pressure."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -20,6 +53,7 @@
       <nav>
         <ul class="nav-menu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../learn/index.html" class="nav-link">Learn</a></li>
           <li><a href="../index.html#science" class="nav-link">The Science</a></li>
           <li><a href="support.html" class="nav-link active">Support & FAQ</a></li>
           <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
@@ -98,16 +132,15 @@
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>Does Together include AI?</span>
+              <span>What are Focus Spaces?</span>
               <span class="faq-icon">
                 <span class="material-symbols-outlined">expand_more</span>
               </span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                <p>Together works fully without AI. AI is an optional Together Pro enhancement called Device AI.</p>
-                <p><strong>Device AI uses Apple Intelligence:</strong> On supported Apple devices, Pro users can enable private actions such as summarizing a completed session, rewriting a reflection, creating calm encouragement, or organizing a brain dump into Today, Later, and Someday.</p>
-                <p>Together does not provide an AI model, run AI servers, sell an AI subscription, store AI conversations, or require an AI account.</p>
+                <p>Focus Spaces are instant 24/7 prerecorded body-doubling environments (such as someone studying, working at a desk, quiet office, reading, or doing household tasks).</p>
+                <p>They provide immediate visual presence without waiting for a live peer partner match or managing social expectations. They are not live sessions and not guided coaching videos—they are quiet co-working environments.</p>
               </div>
             </div>
           </div>
@@ -121,8 +154,9 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                <p>Together uses peer-to-peer WebRTC connections routed through secure LiveKit media routers. All live voice and video streams are encrypted in transit using industry-standard **DTLS-SRTP encryption**, protecting you from eavesdropping.</p>
-                <p><strong>No recording occurs:</strong> Audio and video data is streamed in real-time between devices and is never cached, processed, or saved to servers. Metadata such as focus category and match duration is used for history, streaks, moderation, and body-doubling access. Audio and video are not recorded.</p>
+                <p>Together uses peer-to-peer WebRTC connections routed through secure LiveKit media routers. All live voice and video streams are encrypted in transit using industry-standard <strong>DTLS-SRTP encryption</strong>, protecting you from eavesdropping.</p>
+                <p><strong>No routine recording occurs:</strong> Audio and video data is streamed in real-time between devices and is never cached, processed, or saved to servers during standard sessions.</p>
+                <p><strong>Reporting exception:</strong> If a user submits a safety report during a camera session, Together captures a short proof clip that is uploaded securely to cloud moderation storage for human review. Temporary local evidence files are deleted immediately after upload, and local file paths are never stored.</p>
               </div>
             </div>
           </div>
@@ -137,22 +171,77 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <p>Together saves focus configurations, completed session history, streaks, favorite tasks, and settings locally and through supported account sync features.</p>
-                <p>Device AI prompts and outputs are not part of Together account sync and are not stored by Together as AI conversations.</p>
               </div>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>Is there a premium version?</span>
+              <span>How does Together protect against screenshots in partner sessions?</span>
               <span class="faq-icon">
                 <span class="material-symbols-outlined">expand_more</span>
               </span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                <p>Together is free to download and use for solo focus sessions and 10 free body-doubling sessions. Together Pro unlocks unlimited body doubling, progress features, and optional Device AI on supported Apple devices.</p>
-                <p>Subscriptions are securely managed through Apple's App Store and Google Play billing, processed via RevenueCat integrations.</p>
+                <p>Partner sessions activate native screen protection. iOS detects screenshot attempts during active sessions; Android natively blocks screenshots and listens for Android 14+ capture callbacks. Repeated screenshot attempts automatically trigger a 4-hour restriction from partner sessions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does user reporting work in Together?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Reports include typed reasons (Under 18, Harassment, Sexual Content, Threats, Spam/Scam, Safety Concern). Reporting immediately exits the media room first so the partner is notified, submits the report to Supabase via constrained RPCs, and restricts the reported user.</p>
+                <p>For camera sessions, a short proof clip is uploaded securely to Supabase storage. Temporary local evidence is deleted immediately after upload, and local file paths are never stored.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does blocking work?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Clicking "Block User" creates an explicit cloud database block record. Matchmakers fetch active block records at session start and automatically exclude blocked users from pairing with you.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I hide my focus streak or disable friend requests?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes. You can opt out of receiving friend requests at any time in your profile settings, and choose whether your focus streak is visible to the public or friends.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I delete my account and data?</span>
+              <span class="faq-icon">
+                <span class="material-symbols-outlined">expand_more</span>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Account deletion removes all local profile data and permanently deletes your Supabase auth account along with related cloud data cleanup paths.</p>
               </div>
             </div>
           </div>
@@ -160,54 +249,23 @@
         </div>
       </section>
 
-      <!-- Contact Support Form -->
-      <section class="contact-section glass-card" id="contact-container">
-        <h2>Quick Support</h2>
-        <p class="contact-subtitle">Need help? Submit a support request and our team will get back to you within 24 hours.</p>
-        
-        <form class="support-form" id="supportForm">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="emailAddr">Email Address</label>
-            <input type="email" id="emailAddr" class="form-control" placeholder="john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="supportTopic">Topic</label>
-            <select id="supportTopic" class="form-control" style="background: var(--bg-color); cursor: pointer;" required>
-              <option value="" disabled selected>Select a topic</option>
-              <option value="general">General Inquiry</option>
-              <option value="billing">Subscription & Billing</option>
-              <option value="bug">Report a Bug</option>
-              <option value="user">Report a Focus Match Partner</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="supportMsg">Message</label>
-            <textarea id="supportMsg" class="form-control" placeholder="Describe your issue or question in detail..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Submit Support Request</button>
-        </form>
-
-        <div class="form-success-container" id="supportSuccess">
-          <div class="success-icon-badge">
-            <span class="material-symbols-outlined" style="font-size: 28px; width: 28px; height: 28px;">check</span>
-          </div>
-          <h3>Ticket Created</h3>
-          <p>We've received your request! A confirmation email has been sent. Your support ticket ID is: <strong id="ticketIdVal" style="color: var(--primary);">#TGT-0000</strong></p>
-          <p style="font-size: 0.85rem; color: var(--text-secondary);">Average response time is currently under 12 hours.</p>
-          <button class="btn btn-secondary btn-sm" id="resetFormBtn" style="margin-top: 1rem;">Submit Another Ticket</button>
+      <!-- Direct Mail Support Section -->
+      <section class="contact-section glass-card" id="contact-container" style="text-align: center; padding: 3rem 2rem; margin-top: 4.5rem;">
+        <div class="feature-icon-wrapper" style="margin: 0 auto 1.5rem auto; width: 64px; height: 64px; border-radius: 50%; background: var(--primary-soft); display: flex; align-items: center; justify-content: center;">
+          <span class="material-symbols-outlined" style="font-size: 32px; color: var(--primary);">mail</span>
         </div>
+        <h2>Need Help or Have Questions?</h2>
+        <p class="contact-subtitle" style="margin-bottom: 1.5rem;">Feel free to reach out to us directly via email. We're happy to assist with any support, billing, or feedback inquiries.</p>
+        <a href="mailto:avocadowitharms@gmail.com" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.8rem 1.8rem; font-size: 1.05rem;">
+          <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+          <span>Send an Email</span>
+        </a>
+        <p style="margin-top: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">Direct email address: <a href="mailto:avocadowitharms@gmail.com" style="color: var(--primary); font-weight: 600;">avocadowitharms@gmail.com</a></p>
       </section>
 
     </div>
 
   </main>
-
-
 
   <!-- SITE FOOTER -->
   <footer class="site-footer">
@@ -224,36 +282,19 @@
           <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-1h2c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-3h-2V5h2c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2zM4 19h16v2H4v-2z"/></svg>
           <span>Buy me a coffee</span>
         </a>
-        <a class="social-icon-link instagram-icon-link" href="https://www.instagram.com/flowtimefocus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true">
-            <defs>
-              <linearGradient id="instagram-icon-gradient" x1="4" y1="22" x2="20" y2="2" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#ffdc80"/>
-                <stop offset="0.32" stop-color="#f77737"/>
-                <stop offset="0.6" stop-color="#e1306c"/>
-                <stop offset="1" stop-color="#833ab4"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#instagram-icon-gradient)" d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm0 2c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3V7c0-1.65-1.35-3-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
-          </svg>
-        </a>
-        <a class="social-icon-link x-icon-link" href="https://x.com/Flowtime_app" target="_blank" rel="noopener noreferrer" aria-label="X">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2H21l-6.04 6.9L22 22h-5.63l-4.41-5.77L6.91 22H4.15l6.46-7.38L3.86 2h5.77l3.99 5.27L18.24 2zm-.97 17.69h1.53L8.79 4.19H7.15l10.12 15.5z"/></svg>
-        </a>
         <a class="top-link" href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
       </div>
     </footer>
   </footer>
 
   <script>
-    // Theme Switcher Logic with Material 3 Switch
+    // Theme Toggle Logic
     const themeToggleCheckbox = document.getElementById('themeToggleCheckbox');
-    
+
     function getThemePreference() {
-      if (localStorage.getItem('theme')) {
-        return localStorage.getItem('theme');
-      }
-      return 'light';
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) return storedTheme;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
     function setTheme(theme) {
@@ -290,34 +331,6 @@
           answer.style.maxHeight = answer.scrollHeight + 'px';
         }
       });
-    });
-
-    // Quick Support Form Submit Mock Logic
-    const supportForm = document.getElementById('supportForm');
-    const supportSuccess = document.getElementById('supportSuccess');
-    const ticketIdVal = document.getElementById('ticketIdVal');
-    const resetFormBtn = document.getElementById('resetFormBtn');
-
-    supportForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const randomTicketNum = Math.floor(1000 + Math.random() * 9000);
-      ticketIdVal.textContent = `#TGT-${randomTicketNum}`;
-
-      supportForm.style.transition = 'opacity 0.25s ease';
-      supportForm.style.opacity = '0';
-      
-      setTimeout(() => {
-        supportForm.style.display = 'none';
-        supportSuccess.classList.add('active');
-      }, 250);
-    });
-
-    resetFormBtn.addEventListener('click', () => {
-      supportForm.reset();
-      supportSuccess.classList.remove('active');
-      supportForm.style.display = 'flex';
-      supportForm.style.opacity = '1';
     });
   </script>
 </body>

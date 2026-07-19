@@ -1,0 +1,21 @@
+# robots.txt for Together (https://gettogether.app)
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for AI Search & indexing (ChatGPT, Claude, Gemini, Perplexity, Copilot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://gettogether.app/sitemap.xml

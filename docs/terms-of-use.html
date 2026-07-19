@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Use - Together App</title>
   <meta name="description" content="Read the Terms of Use for Together. Understand co-working community rules, peer-matching conduct, subscription policies, and data backup agreements.">
+  <link rel="canonical" href="https://gettogether.app/docs/terms-of-use.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="assets/together_icon.png" type="image/png">
 </head>
@@ -20,6 +21,7 @@
       <nav>
         <ul class="nav-menu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../learn/index.html" class="nav-link">Learn</a></li>
           <li><a href="../index.html#science" class="nav-link">The Science</a></li>
           <li><a href="support.html" class="nav-link">Support & FAQ</a></li>
           <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
@@ -52,10 +54,10 @@
         <div class="toc-title">ON THIS PAGE</div>
         <ul class="toc-list">
           <li><a href="#agreement" class="toc-link">1. Agreement to Terms</a></li>
-          <li><a href="#user-conduct" class="toc-link">2. Virtual Conduct Rules</a></li>
-          <li><a href="#moderation-reports" class="toc-link">3. Camera Reports & Proof Clips</a></li>
+          <li><a href="#user-conduct" class="toc-link">2. Virtual Conduct & Screenshots</a></li>
+          <li><a href="#moderation-reports" class="toc-link">3. Reports & Evidence Storage</a></li>
           <li><a href="#subscriptions" class="toc-link">4. Subscriptions & Billing</a></li>
-          <li><a href="#accounts" class="toc-link">5. Local & Cloud Data</a></li>
+          <li><a href="#accounts" class="toc-link">5. Cloud Data & Account Control</a></li>
           <li><a href="#ip" class="toc-link">6. Intellectual Property</a></li>
           <li><a href="#liability" class="toc-link">7. Limitations</a></li>
           <li><a href="#contact" class="toc-link">8. Contact Information</a></li>
@@ -65,7 +67,7 @@
       <!-- Policy Text Content -->
       <article class="policy-body">
         <h1>Terms of Use</h1>
-        <div class="policy-date">Last Updated: July 12, 2026</div>
+        <div class="policy-date">Last Updated: July 19, 2026</div>
 
         <section class="policy-section" id="agreement">
           <h2>1. Agreement to Terms</h2>
@@ -78,53 +80,62 @@
         </section>
 
         <section class="policy-section" id="user-conduct">
-          <h2>2. Virtual Conduct Rules</h2>
+          <h2>2. Virtual Conduct & Screenshot Rules</h2>
           <p>
-            Together matching rooms connect real individuals globally for real-time study and work. To maintain a safe, welcoming, and productive environment for neurodivergent individuals and students, you agree to strictly adhere to the following conduct rules:
+            Together matching rooms connect real individuals globally for real-time study, work, and focus. To maintain a safe, welcoming, and productive environment for neurodivergent individuals and students across all session types (Solo Sessions, 1:1 Live Body Doubling, and 24/7 Focus Spaces), you agree to strictly adhere to the following conduct rules:
           </p>
           <ul>
             <li><strong>Work & Study Purpose:</strong> Focus rooms exist solely for work, study, chores, and quiet task management. You must not use the matches for socializing, dating, marketing, or general non-focus purposes.</li>
             <li><strong>Decency & Attire:</strong> If camera connection is active, you must remain fully clothed, display an appropriate, respectful environment, and avoid displaying any offensive, harassing, or graphic material.</li>
             <li><strong>Respectful Interaction:</strong> In voice mode, verbal communication must remain polite and encouraging. Harassment, hate speech, bullying, swearing, or disruptive behavior is met with a zero-tolerance policy.</li>
-            <li><strong>Reporting System:</strong> Users can flag partners who violate these rules. If a camera-session report is submitted, Together attempts to capture and send a short proof clip and both users’ report/session data for human review.</li>
-            <li><strong>Enforcement:</strong> Confirmed first-time abuse may result in a 30-day restriction from camera and partner services. Repeat abuse may result in a permanent restriction.</li>
+            <li><strong>Screenshot Protection:</strong> Live partner sessions activate native OS screen protection to guard peer privacy. iOS detects screenshot attempts; Android natively blocks screenshots and listens for Android 14+ capture callbacks. Repeated screenshot attempts automatically trigger a 4-hour partner-session restriction.</li>
+            <li><strong>Account Restrictions:</strong> Active account restrictions are cloud-backed and verified from Supabase before enabling or starting partner sessions.</li>
           </ul>
         </section>
 
         <section class="policy-section" id="moderation-reports">
-          <h2>3. Camera Reports & Proof Clips</h2>
+          <h2>3. Structured Safety Reports & Evidence Storage</h2>
           <p>
-            Before entering a camera body-doubling session, you must read and agree to the camera safety notice in the app. If one user reports another during a camera session, Together automatically attempts to capture a short 2-second proof video from the active session and upload it to private Together moderation storage for human review.
+            Together provides a structured safety reporting system for community protection. Reports require selecting a typed reason: <em>under 18</em>, <em>harassment</em>, <em>sexual content</em>, <em>threats</em>, <em>spam/scam</em>, or <em>other safety concern</em>.
           </p>
           <p>
-            The report sent for review includes both users’ account IDs, display names, the session task, planned duration, elapsed time, connection style, session type, report reason, moderation status, timestamps, and the proof clip when capture and upload are available. Report records and proof clips are used to review abuse reports, enforce restrictions, protect users, and keep partner sessions safe.
+            Submitting a report immediately exits the media room first so the partner is notified, submits the report to Supabase via constrained RPCs, and restricts the reported user.
+          </p>
+          <p>
+            For camera-session reports, Together captures a short proof clip that is uploaded securely to Supabase storage for human moderation review. Temporary local evidence files are deleted immediately after upload, and local file paths are never stored. Report restrictions execute via constrained database Remote Procedure Calls (RPCs).
           </p>
         </section>
 
         <section class="policy-section" id="subscriptions">
           <h2>4. Subscriptions & Billing</h2>
-          <p>Together offers certain premium features under subscription licensing ("Together Premium"):</p>
+          <p>Together offers certain premium features under subscription licensing ("Together Pro"):</p>
           <ul>
-            <li><strong>Billing Transactions:</strong> Subscriptions are processed through Apple App Store or Google Play in-app purchases. Standard payment forms, renewals, and refunds are managed solely by the respective app platform stores.</li>
+            <li><strong>Billing Transactions:</strong> Subscriptions are processed through Apple App Store or Google Play in-app purchases. Standard payment forms, renewals, and refunds are managed solely by the respective app platform stores via RevenueCat integration.</li>
             <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically at the end of the billing period unless auto-renew is turned off at least 24 hours before the end of the current period via your device account settings.</li>
             <li><strong>Revocation:</strong> Together reserves the right to adjust, change, or terminate premium features, prices, or subscription structures upon reasonable notice.</li>
           </ul>
         </section>
 
         <section class="policy-section" id="accounts">
-          <h2>5. Local & Cloud Data</h2>
+          <h2>5. Cloud Data, Row-Level Security & Account Control</h2>
           <p>
-            Together does not manage central user database servers. Profiles and stats are saved locally on your device and synchronized via personal iCloud storage.
+            For signed-in Supabase users, restrictions, blocks, reports, friend requests, accepted friends, profile history, settings, and friend visibility are cloud-backed using Supabase database tables protected by strict <strong>Row-Level Security (RLS)</strong>. Local profile state does not decide restriction or friend truth.
           </p>
           <p>
-            You are entirely responsible for the security of your device, local app data files, and iCloud account credentials. Together is not liable for data loss, corrupted statistics, or local app resets caused by device failures, operating system updates, or iCloud syncing disruptions.
+            <strong>Explicit Blocking:</strong> Choosing "Block User" creates an explicit cloud database block record. Session matchmakers fetch block records at start to permanently exclude blocked users from matching with you.
+          </p>
+          <p>
+            <strong>Friend & Streak Controls:</strong> Users can disable receiving friend requests and choose whether their focus streak is visible publicly.
+          </p>
+          <p>
+            <strong>Account Erasure:</strong> Account deletion purges all local profile data and permanently deletes the Supabase authentication user along with associated cloud data cleanup paths.
           </p>
         </section>
 
         <section class="policy-section" id="ip">
           <h2>6. Intellectual Property</h2>
           <p>
-            The Together logo, design system, illustrations, font layouts, code structures, and original assets (including the design of Device AI experiences) are the exclusive property of Together and its developers.
+            The Together logo, design system, illustrations, font layouts, code structures, and original assets (including the design of Focus Spaces) are the exclusive property of Together and its developers.
           </p>
           <p>
             You may not copy, reverse engineer, decompile, redistribute, or modify any part of the Together mobile application, source code, or online landing pages without explicit written authorization.
@@ -171,22 +182,6 @@
         <a class="coffee-link" href="https://buymeacoffee.com/avocadowita" target="_blank" rel="noopener noreferrer">
           <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-1h2c2.21 0 4-1.79 4-4V7c0-2.21-1.79-4-4-4zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-3h-2V5h2c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2zM4 19h16v2H4v-2z"/></svg>
           <span>Buy me a coffee</span>
-        </a>
-        <a class="social-icon-link instagram-icon-link" href="https://www.instagram.com/flowtimefocus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true">
-            <defs>
-              <linearGradient id="instagram-icon-gradient" x1="4" y1="22" x2="20" y2="2" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#ffdc80"/>
-                <stop offset="0.32" stop-color="#f77737"/>
-                <stop offset="0.6" stop-color="#e1306c"/>
-                <stop offset="1" stop-color="#833ab4"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#instagram-icon-gradient)" d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm0 2c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3V7c0-1.65-1.35-3-3-3H7zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5zM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
-          </svg>
-        </a>
-        <a class="social-icon-link x-icon-link" href="https://x.com/Flowtime_app" target="_blank" rel="noopener noreferrer" aria-label="X">
-          <svg class="material-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2H21l-6.04 6.9L22 22h-5.63l-4.41-5.77L6.91 22H4.15l6.46-7.38L3.86 2h5.77l3.99 5.27L18.24 2zm-.97 17.69h1.53L8.79 4.19H7.15l10.12 15.5z"/></svg>
         </a>
         <a class="top-link" href="#">Back to top <span aria-hidden="true">&uarr;</span></a>
       </div>

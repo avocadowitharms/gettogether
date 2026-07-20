@@ -346,6 +346,44 @@
       </div>
     </section>
 
+    <!-- APP VISUAL SHOWCASE -->
+    <section style="max-width: 1100px; margin: 2.5rem auto 4rem auto; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 2.5rem;">
+      
+      <!-- Row 1: App Overview (Image Left, Text Right) -->
+      <div class="glass-card" style="padding: 2.25rem; border-radius: 24px; border: 1px solid var(--card-border); display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: center;">
+        <div style="text-align: center;">
+          <img src="docs/assets/together_app_overview.jpg" alt="Together App Interface Overview" style="width: 100%; border-radius: 16px; box-shadow: 0 12px 32px rgba(0,0,0,0.08);">
+        </div>
+        <div style="text-align: left;">
+          <span style="display: inline-block; background: var(--primary-soft); color: var(--primary); font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.75rem;">App Overview</span>
+          <h3 style="font-size: 1.75rem; color: var(--text-primary); margin-bottom: 0.75rem;">Simple, On-Demand Sessions</h3>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.25rem;">
+            Choose your duration (10–90 min), select your connection style (Silent, Voice, or Camera), and launch body doubling without talking required. Together pairs you with someone else who is also about to begin.
+          </p>
+          <a href="#compare" style="color: var(--primary); font-weight: 600; font-size: 0.95rem; text-decoration: none;">Explore focus modes &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Row 2: Kovu's Focus Room (Text Left, Image Right) -->
+      <div class="glass-card" style="padding: 2.25rem; border-radius: 24px; border: 1px solid var(--card-border); display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: center;">
+        <div style="text-align: left;">
+          <span style="display: inline-block; background: var(--primary-soft); color: var(--primary); font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.75rem;">Focus Spaces</span>
+          <h3 style="font-size: 1.75rem; color: var(--text-primary); margin-bottom: 0.75rem;">Meet Kovu: Focus Companion Space</h3>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.65; margin-bottom: 0.75rem;">
+            A calm, gentle presence with zero conversation, zero pressure, and all the quiet company you need to get into deep work.
+          </p>
+          <p style="color: var(--primary); font-weight: 500; font-size: 0.98rem; line-height: 1.55; margin-bottom: 1.25rem;">
+            If there's one thing Kovu is a master of, it's relaxing and sleeping. He is happy to help you focus!
+          </p>
+          <a href="learn/what-are-focus-spaces.html" style="color: var(--primary); font-weight: 600; font-size: 0.95rem; text-decoration: none;">Learn about Focus Spaces &rarr;</a>
+        </div>
+        <div style="text-align: center;">
+          <img src="docs/assets/kovu_companion_space.png" alt="Meet Kovu - Official Focus Space Companion" style="max-height: 480px; width: auto; border-radius: 16px;">
+        </div>
+      </div>
+
+    </section>
+
     <!-- INTERACTIVE ADHD BODY DOUBLING SIMULATOR -->
     <section class="simulator-section">
       <h2>Experience Virtual Body Doubling</h2>
@@ -948,7 +986,33 @@
   </script>
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
   <script>
-      fetch("https://assets.mailerlite.com/jsonp/2378130/forms/192326054455543186/takel")
+    // Lightbox modal logic for expandable showcase images
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.createElement('div');
+      modal.className = 'lightbox-modal';
+      modal.innerHTML = '<span class="lightbox-close">&times;</span><img class="lightbox-content" alt="Enlarged view">';
+      document.body.appendChild(modal);
+
+      const modalImg = modal.querySelector('.lightbox-content');
+      document.querySelectorAll('.glass-card img, img.expandable-image').forEach(img => {
+        img.classList.add('expandable-image');
+        img.addEventListener('click', () => {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt || 'Expanded image view';
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target !== modalImg) {
+          modal.classList.remove('active');
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') modal.classList.remove('active');
+      });
+    });
   </script>
 </body>
 </html>

@@ -189,6 +189,41 @@
       <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
         Together respects different energy levels and privacy comfort zones. Users can select between <strong>Silent Mode</strong> (presence-only awareness without mic/cam requirement), <strong>Voice Mode</strong> (intermittent verbal check-ins), or <strong>Camera Mode</strong> (traditional video presence).
       </p>
+
+      <!-- VISUAL APP SHOWCASE -->
+      <div style="display: flex; flex-direction: column; gap: 2rem; margin: 2.5rem 0;">
+        
+        <!-- Row 1: App Overview (Image Left, Text Right) -->
+        <div class="glass-card" style="padding: 1.75rem; border-radius: 20px; border: 1px solid var(--card-border); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+          <div style="text-align: center;">
+            <img src="docs/assets/together_app_overview.jpg" alt="Together App Overview" style="width: 100%; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+          </div>
+          <div style="text-align: left;">
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.5rem;">General App Overview</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; margin: 0;">
+              Onboarding screens, customizable session duration (10–90m), flexible connection styles (Silent, Voice, Camera), and real-time Solo timers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: Kovu's Companion Space (Text Left, Image Right) -->
+        <div class="glass-card" style="padding: 1.75rem; border-radius: 20px; border: 1px solid var(--card-border); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+          <div style="text-align: left;">
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.5rem;">Meet Kovu: Focus Companion Space</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; margin-bottom: 0.5rem;">
+              A calm, gentle presence with zero conversation, zero pressure, and all the quiet company you need to get into deep work.
+            </p>
+            <p style="color: var(--primary); font-weight: 500; font-size: 0.92rem; line-height: 1.5; margin: 0;">
+              If there's one thing Kovu is a master of, it's relaxing and sleeping. He is happy to help you focus!
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <img src="docs/assets/kovu_companion_space.png" alt="Meet Kovu - Official Focus Space Companion" style="max-height: 400px; width: auto; border-radius: 14px;">
+          </div>
+        </div>
+
+      </div>
+
       <ul style="color: var(--text-primary); font-size: 1rem; line-height: 1.7; margin-left: 1.5rem;">
         <li><a href="learn/what-is-body-doubling.html">What is body doubling?</a></li>
         <li><a href="learn/what-are-focus-spaces.html">Understanding 24/7 Focus Spaces</a></li>
@@ -314,6 +349,34 @@
     setTheme(getThemePreference());
     themeToggleCheckbox.addEventListener('change', () => {
       setTheme(themeToggleCheckbox.checked ? 'dark' : 'light');
+    });
+
+    // Lightbox modal logic for expandable showcase images
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.createElement('div');
+      modal.className = 'lightbox-modal';
+      modal.innerHTML = '<span class="lightbox-close">&times;</span><img class="lightbox-content" alt="Enlarged view">';
+      document.body.appendChild(modal);
+
+      const modalImg = modal.querySelector('.lightbox-content');
+      document.querySelectorAll('.glass-card img, img.expandable-image').forEach(img => {
+        img.classList.add('expandable-image');
+        img.addEventListener('click', () => {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt || 'Expanded image view';
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target !== modalImg) {
+          modal.classList.remove('active');
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') modal.classList.remove('active');
+      });
     });
   </script>
 </body>

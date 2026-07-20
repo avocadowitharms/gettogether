@@ -1,4 +1,4 @@
-# robots.txt for Together (https://gettogether.app)
+# robots.txt for Together (https://togetherfocus.com)
 User-agent: *
 Allow: /
 
@@ -18,4 +18,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://gettogether.app/sitemap.xml
+Sitemap: https://togetherfocus.com/sitemap.xml

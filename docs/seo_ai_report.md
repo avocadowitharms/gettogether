@@ -12,7 +12,7 @@ The architecture was designed for dual optimization:
 ## Deliverables Summary
 
 ### 1. Landing Page & Base Site Optimization
-- Added canonical tags (`https://gettogether.app/`) and rich OpenGraph/Twitter social cards.
+- Added canonical tags (`https://togetherfocus.com/`) and rich OpenGraph/Twitter social cards.
 - Integrated JSON-LD structured data:
   - `SoftwareApplication`: Specifying Together's capabilities (Solo Focus, 1:1 Live Body Doubling, Focus Spaces).
   - `Organization`: Branding, founder attribution, social links.

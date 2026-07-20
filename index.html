@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Together - ADHD Body Doubling & Focus Sessions</title>
-  <meta name="description" content="Overcome procrastination and executive dysfunction with Together. Start solo, join 1:1 Live Body Doubling, or focus instantly with 24/7 prerecorded Focus Spaces.">
+  <title>Together - ADHD Body Doubling & Focus Companion</title>
+  <meta name="description" content="Discover Together, a privacy-first body doubling app for ADHD and executive dysfunction. Features 24/7 instant Focus Spaces, 1:1 Live peer sessions (Silent/Voice/Camera), and Solo timers.">
+  <meta name="keywords" content="Focusmate alternative, body doubling app, ADHD focus app, virtual body doubling, FLOWN alternative, Flow Club alternative, Dubbii alternative, executive dysfunction tools, 24/7 focus spaces, silent body doubling, ADHD task initiation, virtual study room, remote focus partner">
   <meta name="google-site-verification" content="-fDKf9A_AhpZPVTe1mt_HQcGB8td2qdnA8NAkiZMgBc" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-WcytX6iLRvxfPxmxvI8BH.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
   <link rel="canonical" href="https://gettogether.app/">
   <link rel="stylesheet" href="docs/styles.css">
   <link rel="shortcut icon" href="docs/assets/together_icon.png" type="image/png">
   
   <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="Together - ADHD Body Doubling, Focus Spaces & Task Initiation">
-  <meta property="og:description" content="Overcome executive dysfunction and procrastination with Together. Instant live body doubling, 24/7 prerecorded Focus Spaces, and low-friction focus tools.">
+  <meta property="og:title" content="Together - ADHD Body Doubling & Focus Companion">
+  <meta property="og:description" content="Privacy-first body doubling app. Instant live 1:1 peer sessions, 24/7 prerecorded Focus Spaces, and ADHD task initiation tools.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gettogether.app/">
   <meta property="og:image" content="https://gettogether.app/docs/assets/together_icon.png">
@@ -20,10 +27,10 @@
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Together - ADHD Body Doubling & Focus Companion">
-  <meta name="twitter:description" content="Privacy-first body doubling app designed for ADHD, executive dysfunction, and task initiation. Solo sessions, Live body doubles, and instant 24/7 Focus Spaces.">
+  <meta name="twitter:description" content="Overcome executive dysfunction with Together. On-demand 1:1 body doubling, 24/7 Focus Spaces, and solo timers.">
   <meta name="twitter:image" content="https://gettogether.app/docs/assets/together_icon.png">
 
-  <!-- JSON-LD Structured Data: SoftwareApplication & Organization -->
+  <!-- JSON-LD Structured Data: SoftwareApplication, Organization & FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,13 +39,13 @@
         "@type": "SoftwareApplication",
         "name": "Together",
         "applicationCategory": "ProductivityApplication",
-        "operatingSystem": "iOS, macOS",
+        "operatingSystem": ["iOS", "Android"],
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
-        "description": "Privacy-first body doubling app designed for ADHD, executive dysfunction, and task paralysis. Features Solo Focus sessions, 1:1 Live Body Doubling (Silent, Voice, Camera), and 24/7 prerecorded Focus Spaces.",
+        "description": "Together is a privacy-first ADHD body doubling app. Features 1:1 Live Body Doubling (Silent, Voice, Camera), 24/7 prerecorded Focus Spaces with zero wait time, and Solo Focus timers designed for executive dysfunction.",
         "url": "https://gettogether.app/"
       },
       {
@@ -46,6 +53,43 @@
         "name": "Together",
         "url": "https://gettogether.app/",
         "logo": "https://gettogether.app/docs/assets/together_icon.png"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Together compare to Focusmate for ADHD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Together is designed specifically for neurodivergent brains and task initiation. Unlike Focusmate (which requires booking video sessions in advance), Together provides instant 1:1 peer matching, 24/7 prerecorded Focus Spaces with zero wait time, and flexible connection modes (Silent, Voice, or Camera) to eliminate camera anxiety."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Together compare to FLOWN, Flow Club, and Dubbii?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FLOWN and Flow Club rely on scheduled, host-led group calls with high monthly subscription fees ($25-$40/mo). Together provides private, on-demand 1:1 sessions and 24/7 Focus Spaces without fixed schedules or expensive fees. Dubbii offers chore videos, whereas Together integrates chore and desk focus with live peer body doubling and Pomodoro timers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Focus Spaces and how do they work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Focus Spaces are 24/7 instant prerecorded focus environments (quiet office, studying, reading, household tasks) that let you start body doubling immediately without waiting for a partner or turning on a camera."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Together privacy-first and secure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Together uses P2P encrypted streams (DTLS-SRTP WebRTC), native device screenshot protection on iOS and Android, cloud database RLS, and explicit block lists. No video or audio is ever recorded or stored."
+            }
+          }
+        ]
       }
     ]
   }
@@ -253,11 +297,11 @@
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="learn/index.html" class="nav-link">Learn</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="learn/index.html" class="nav-link">Learn Hub</a></li>
+          <li><a href="#compare" class="nav-link">Compare</a></li>
           <li><a href="#science" class="nav-link">The Science</a></li>
-          <li><a href="docs/support.html" class="nav-link">Support & FAQ</a></li>
-          <li><a href="docs/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
-          <li><a href="docs/terms-of-use.html" class="nav-link">Terms of Use</a></li>
+          <li><a href="docs/support.html" class="nav-link">Support</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
@@ -290,6 +334,21 @@
       </p>
       <div class="hero-buttons">
         <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#compare" class="btn btn-secondary" style="margin-left: 0.75rem; border: 1px solid var(--card-border); padding: 0.75rem 1.5rem; border-radius: 32px; font-weight: 600; text-decoration: none; color: var(--text-primary);">See How We Compare</a>
+      </div>
+    </section>
+
+    <!-- PRODUCT FACTS / WHAT IS TOGETHER SECTION -->
+    <section class="product-facts-section">
+      <div class="product-facts-content">
+        <span class="eyebrow">PRODUCT FACTS</span>
+        <h2>What is Together?</h2>
+        <p>
+          Together is an on-demand virtual body doubling and focus companion app for iPhone and Android. It combines 1:1 Live Peer Sessions (Silent, Voice, or Camera), 24/7 prerecorded Focus Spaces, Solo timers, and native screenshot protection in one privacy-first focus app. It is designed especially for people with ADHD and neurodivergents who lose track of time, struggle with executive dysfunction or task initiation, or get pulled away by scheduling friction and camera anxiety. An account is required to use Together.
+        </p>
+        <div>
+          <a href="about.html" class="product-facts-link">Learn how Together works.</a>
+        </div>
       </div>
     </section>
 
@@ -445,9 +504,9 @@
             <div class="stat-desc">ADHD users report feeling less overwhelmed and staying on task significantly longer.</div>
           </div>
           <div class="stat-item glass-card">
-            <div class="stat-num">10s</div>
-            <div class="stat-label">Average Match Time</div>
-            <div class="stat-desc">Be matched with a real study peer globally without long, focus-breaking wait times.</div>
+            <div class="stat-num">0s</div>
+            <div class="stat-label">Wait Time for Spaces</div>
+            <div class="stat-desc">Start focusing immediately in Focus Spaces without waiting for a live partner match.</div>
           </div>
           <div class="stat-item glass-card">
             <div class="stat-num">24/7</div>
@@ -463,6 +522,113 @@
       </div>
     </section>
 
+    <!-- APP COMPARISON & ALTERNATIVES SECTION -->
+    <section class="features-section" id="compare" style="padding-top: 3.5rem; padding-bottom: 4rem;">
+      <div style="max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <span class="badge-comparison" style="display: inline-block; background: var(--primary-soft); color: var(--primary); font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.75rem;">Factual Platform Comparison</span>
+          <h2 style="font-size: 2.25rem;">Together vs. Common Body Doubling Services</h2>
+          <p style="color: var(--text-secondary); max-width: 760px; margin: 0.5rem auto 0 auto; font-size: 1.05rem; line-height: 1.6;">
+            An objective side-by-side feature comparison between Together and traditional body doubling services like <strong>Focusmate</strong>, <strong>FLOWN</strong>, <strong>Flow Club</strong>, and <strong>Dubbii</strong> to help you choose the ideal focus format.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature / Dimension</th>
+                <th>Focusmate</th>
+                <th>FLOWN / Flow Club</th>
+                <th>Dubbii</th>
+                <th class="highlight-col">Together</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Instant 24/7 Access (0 Wait Time)</strong></td>
+                <td><span class="check-no">&#10007; Pre-scheduled slots</span></td>
+                <td><span class="check-no">&#10007; Host schedule</span></td>
+                <td><span class="check-yes">&#10003; Pre-recorded videos</span></td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Yes (<a href="learn/what-are-focus-spaces.html">Focus Spaces</a>)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Live 1:1 Peer Body Doubling</strong></td>
+                <td><span class="check-yes">&#10003; Yes</span></td>
+                <td><span class="check-no">&#10007; Facilitated group calls</span></td>
+                <td><span class="check-no">&#10007; No live matching</span></td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Yes (Silent/Voice/Cam)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Flexible Connection Modes</strong></td>
+                <td>Camera + Mic mandatory</td>
+                <td>Video mandatory</td>
+                <td>Video playback only</td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Silent, Voice, or Camera</span></td>
+              </tr>
+              <tr>
+                <td><strong>On-Demand Zero Pre-Scheduling</strong></td>
+                <td><span class="check-no">&#10007; Booking required</span></td>
+                <td><span class="check-no">&#10007; Booking required</span></td>
+                <td><span class="check-yes">&#10003; On-demand</span></td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Instant matching & Solo</span></td>
+              </tr>
+              <tr>
+                <td><strong>Task Categories & Matching</strong></td>
+                <td>Desk & study tasks</td>
+                <td>Work & creative sprints</td>
+                <td>Household chores only</td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Physical & Mental categories (Create any custom task, paired in same category)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Native Screenshot Protection</strong></td>
+                <td><span class="check-no">&#10007; None</span></td>
+                <td><span class="check-no">&#10007; None</span></td>
+                <td><span class="check-no">&#10007; N/A</span></td>
+                <td class="highlight-col"><span class="check-yes">&#10003; Yes (iOS & Android)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Pricing & Subscription Model</strong></td>
+                <td>$9.99/mo (after 3 free)</td>
+                <td>$25 - $40/month</td>
+                <td>$4.99/month</td>
+                <td class="highlight-col"><span class="check-yes">&#10003; $9.99/month</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- DEEP FACTUAL COMPARISON BREAKDOWNS -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+          
+          <div class="glass-card" style="padding: 1.5rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.75rem;">Focusmate Comparison</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+              <strong>Focusmate</strong> pioneered desktop 1:1 webcam body doubling. Sessions require booking fixed time slots in advance (25, 50, or 75 min) and mandate active camera presence. <strong>Together</strong> eliminates pre-scheduling friction with instant peer matching, provides Silent and Voice options for camera-shy users, and offers 24/7 prerecorded Focus Spaces when no live partner is desired.
+            </p>
+            <a href="learn/together-vs-focusmate.html" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Read detailed Focusmate analysis &rarr;</a>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.75rem;">FLOWN & Flow Club Comparison</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+              <strong>FLOWN</strong> and <strong>Flow Club</strong> host structured video group sessions led by human facilitators. They feature group intros, intention setting, and social breakout rooms, but cost $25–$40/month. <strong>Together</strong> offers low-pressure private 1:1 body doubling and instant solo rooms without group call social pressure or monthly fee barriers.
+            </p>
+            <a href="learn/together-vs-flown.html" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Read FLOWN & Flow Club analysis &rarr;</a>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 0.75rem;">Dubbii Comparison</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+              <strong>Dubbii</strong> delivers pre-recorded task video guides tailored for household chores (washing dishes, folding laundry, tidying). <strong>Together</strong> combines 24/7 ambient Focus Spaces for both chores and desk work with real-time live human peer matching and integrated Pomodoro timers.
+            </p>
+            <a href="learn/together-vs-dubbii.html" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Read Dubbii comparison &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- APP FEATURES Grid -->
     <section class="features-section">
       <h2>Designed for executive success.</h2>
@@ -473,7 +639,7 @@
             <span class="material-symbols-outlined">groups</span>
           </div>
           <h3>Instant Peer Matching</h3>
-          <p>Choose a task (Study, Coding, Emails, Cleaning) and get matched with another human body double in seconds. Keep each other focused in active study intervals.</p>
+          <p>Create any custom task under <strong>Physical</strong> (chores, cleaning, moving around) or <strong>Mental</strong> (desk work, studying, coding, writing) categories and get paired with a partner working in the same category.</p>
         </div>
 
         <div class="feature-card glass-card">
@@ -481,7 +647,7 @@
             <span class="material-symbols-outlined">desk</span>
           </div>
           <h3>Instant 24/7 Focus Spaces</h3>
-          <p>Start working immediately alongside carefully selected prerecorded focus environments (desk work, studying, quiet office, reading, creative work, or household tasks). Zero wait time, 24/7 availability, zero social pressure.</p>
+          <p>Start working immediately alongside prerecorded focus environments (desk work, quiet office, household tasks) or special <strong>Companion Spaces</strong> where you can focus alongside Kovu, the founder's dog. Zero wait time and zero social pressure.</p>
         </div>
 
         <div class="feature-card glass-card">
@@ -578,6 +744,78 @@
       </div>
     </section>
 
+    <!-- PRICING SECTION -->
+    <section class="features-section" id="pricing" style="padding-top: 3rem; padding-bottom: 4rem;">
+      <div style="max-width: 500px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <span style="display: inline-block; background: var(--primary-soft); color: var(--primary); font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.75rem;">Simple Pricing</span>
+          <h2 style="font-size: 2.25rem;">Together Monthly Pro</h2>
+          <p style="color: var(--text-secondary); margin: 0.5rem auto 0 auto; font-size: 1.05rem; line-height: 1.6;">
+            Flexible monthly access for all body doubling modes and 24/7 Focus Spaces.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 2rem; border-radius: 16px; border: 2px solid var(--primary); text-align: center; background: var(--card-bg);">
+          <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.25rem;">Monthly Pro</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.25rem;">Flexible monthly access</p>
+          <div style="font-size: 2.75rem; font-weight: 700; color: var(--primary); margin-bottom: 1.5rem;">$9.99 <span style="font-size: 1rem; font-weight: 400; color: var(--text-secondary);">/ month</span></div>
+          <a href="#waitlist" class="btn btn-primary" style="width: 100%; text-align: center; display: inline-block;">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION (GEO & SEO) -->
+    <section class="features-section" id="faq" style="padding-top: 3rem; padding-bottom: 4rem;">
+      <div style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <span style="display: inline-block; background: var(--primary-soft); color: var(--primary); font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 0.75rem;">Questions & Answers</span>
+          <h2 style="font-size: 2.25rem;">Frequently Asked Questions</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0 auto; font-size: 1.05rem; line-height: 1.6;">
+            Everything you need to know about Together, virtual body doubling, and how we compare to other focus services.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          
+          <div class="glass-card" style="padding: 1.5rem 1.75rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 0.75rem;">How does Together compare to Focusmate for ADHD?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin: 0;">
+              Together is designed specifically around neurodivergent task activation and cognitive barriers. While Focusmate requires scheduling sessions in advance and relies heavily on mandatory webcam presence, Together lets you start immediately with <strong>instant 1:1 peer matching</strong>, <strong>24/7 prerecorded Focus Spaces</strong> (zero wait time), and flexible <strong>Silent / Voice connection modes</strong> to eliminate camera anxiety. Read our detailed <a href="learn/focusmate-alternative.html">Focusmate Alternative Analysis</a>.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem 1.75rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 0.75rem;">How does Together compare to FLOWN, Flow Club, and Dubbii?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin: 0;">
+              FLOWN and Flow Club host scheduled, facilitator-led video group calls priced between $25 and $40 per month. Together offers private 1:1 sessions and 24/7 ambient Focus Spaces on-demand without monthly subscription barriers, group call pressure, or host introductions. Dubbii offers task videos, whereas Together integrates chore and desk focus with real-time peer body doubling and Pomodoro timers. Explore <a href="learn/together-vs-flown.html">Together vs. FLOWN</a> and <a href="learn/together-vs-flow-club.html">Together vs. Flow Club</a>.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem 1.75rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 0.75rem;">What are 24/7 Focus Spaces?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin: 0;">
+              Focus Spaces are 24/7 instant prerecorded virtual focus environments (quiet office, studying, reading, coding, or household chores) that let you double your focus immediately. They deliver the grounding social facilitation effect of a body double without waiting for a peer match or turning on a camera. Learn more in our <a href="learn/what-are-focus-spaces.html">Focus Spaces Guide</a>.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem 1.75rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 0.75rem;">How does virtual body doubling relieve executive dysfunction and task paralysis?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin: 0;">
+              Executive dysfunction makes task initiation feel overwhelming due to dopamine gating and decision fatigue. Working alongside a body double activates passive social facilitation, stabilizing focus, grounding attention, and lowering the cognitive activation energy required to start. Read our guide on <a href="learn/body-doubling-executive-dysfunction.html">Body Doubling for Executive Dysfunction</a>.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 1.5rem 1.75rem; border-radius: 12px; border: 1px solid var(--card-border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 0.75rem;">Is Together privacy-first and secure?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin: 0;">
+              Yes. Together provides free core access and encrypts peer video/audio streams via DTLS-SRTP WebRTC with no server-side video recording or storage. In addition, Together features native iOS screenshot detection, Android screenshot blocking, cloud database Row-Level Security, and explicit block rules.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- WAITLIST CALL TO ACTION -->
     <section class="promo-section" id="waitlist">
       <div class="promo-card glass-card" style="max-width: 600px; margin: 0 auto; padding: 3rem 2rem;">
@@ -644,6 +882,7 @@
     <footer>
       <span>&copy; 2026 Ava Thalheim</span>
       <nav class="footer-links" aria-label="Legal and support">
+        <a href="about.html">About</a>
         <a href="learn/index.html">Learn Hub</a>
         <a href="docs/privacy-policy.html">Privacy</a>
         <a href="docs/terms-of-use.html">Terms</a>

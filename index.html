@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://togetherfocus.com https://developer.apple.com https://play.google.com https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; script-src 'self' 'unsafe-inline' https://plausible.io https://groot.mailerlite.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.mlcdn.com; font-src 'self' https://fonts.gstatic.com https://assets.mlcdn.com; connect-src 'self' https://plausible.io https://assets.mailerlite.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://analytics.google.com https://cloudflareinsights.com https://*.cloudflareinsights.com; frame-src 'self'; frame-ancestors 'none'; form-action 'self' https://assets.mailerlite.com; media-src 'self' data:; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://togetherfocus.com https://developer.apple.com https://play.google.com https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; script-src 'self' 'unsafe-inline' https://plausible.io https://sibforms.com https://challenges.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://sibforms.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://plausible.io https://*.sibforms.com https://challenges.cloudflare.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://analytics.google.com https://cloudflareinsights.com https://*.cloudflareinsights.com; frame-src 'self' https://challenges.cloudflare.com; frame-ancestors 'none'; form-action 'self' https://*.sibforms.com; media-src 'self' data:; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=(), usb=(), screen-wake-lock=(), web-share=()" />
   <title>Together - ADHD Body Doubling & Focus Companion</title>
@@ -95,129 +95,37 @@
   }
   </script>
   
-  <!-- MailerLite Universal Styles Overrides -->
-  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1783411");</style>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <style type="text/css">
-    /* LOADER */
-    .ml-form-embedSubmitLoad {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-    }
-
-    .g-recaptcha {
-      transform: scale(1);
-      -webkit-transform: scale(1);
-      transform-origin: 0 0;
-      -webkit-transform-origin: 0 0;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
-    }
-
-    .ml-form-embedSubmitLoad:after {
-      content: " ";
-      display: block;
-      width: 11px;
-      height: 11px;
-      margin: 1px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      border-color: #ffffff #ffffff #ffffff transparent;
-      animation: ml-form-embedSubmitLoad 1.2s linear infinite;
-    }
-    @keyframes ml-form-embedSubmitLoad {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer {
-      box-sizing: border-box;
-      display: table;
+    #sib-form {
       margin: 0 auto;
-      position: static;
-      width: 100% !important;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper {
-      background-color: transparent !important;
-      border-width: 0px;
-      border-color: transparent;
-      border-radius: 4px;
-      border-style: solid;
-      box-sizing: border-box;
-      display: inline-block !important;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      width: 100% !important;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-align-center { text-align: center; }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
-      padding: 0;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+      max-width: 420px;
       text-align: center;
-      margin: 0 0 2rem 0;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h2,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h2 {
+
+    #sib-form h2 {
       font-size: 2.25rem !important;
       font-weight: 700 !important;
       margin-bottom: 0.75rem !important;
       color: var(--text-primary) !important;
       font-family: var(--font-sans) !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+
+    #sib-form p {
       color: var(--text-secondary) !important;
       font-family: var(--font-sans) !important;
       font-size: 1rem !important;
       line-height: 1.55 !important;
       margin: 0 auto 1.5rem !important;
-      max-width: 540px !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
-      text-align: left !important;
+
+    #sib-form .entry__field {
+      background: transparent;
+      border: 0;
+      margin-bottom: 1.25rem;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
-      margin: 0 auto;
-      max-width: 420px;
-      width: 100%;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent {
-      margin: 0 0 1.25rem 0;
-      width: 100%;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
-      margin: 0;
-      width: 100%;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+
+    #sib-form input[type="text"] {
       background-color: var(--bg-color) !important;
       color: var(--text-primary) !important;
       border: 1px solid var(--separator) !important;
@@ -229,13 +137,12 @@
       box-sizing: border-box !important;
       transition: var(--transition-smooth) !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus {
+
+    #sib-form input[type="text"]:focus {
       border-color: var(--primary) !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+
+    #sib-form button {
       background-color: var(--primary) !important;
       border: none !important;
       border-radius: 32px !important;
@@ -251,37 +158,40 @@
       box-sizing: border-box !important;
       transition: var(--transition-smooth) !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover,
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+
+    #sib-form button:hover {
       background-color: var(--primary-hover) !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions {
-      text-align: center;
-      width: 100%;
-      margin-bottom: 1.25rem;
-    }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions p {
+
+    #sib-form .entry__specification {
+      display: block;
       color: var(--text-secondary) !important;
       font-family: var(--font-sans) !important;
       font-size: 0.8rem !important;
       line-height: 1.4 !important;
-      margin: 0 !important;
+      margin-bottom: 1.25rem;
+      text-align: center !important;
     }
-    
-    #mlb2-43465993.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions p a {
+
+    #sib-form .entry__specification a {
       color: var(--primary) !important;
       text-decoration: underline !important;
     }
-    
-    .ml-subscribe-close {
-      display: none;
+
+    #sib-form .sib-captcha {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.25rem;
     }
-    
-    .ml-error input {
-      border-color: red !important;
+
+    .sib-form-message-panel {
+      display: none;
+      margin: 0 auto 1.25rem;
+      max-width: 420px;
+    }
+
+    .input--hidden {
+      display: none !important;
     }
   </style>
 </head>
@@ -858,54 +768,35 @@
     <section class="promo-section" id="waitlist">
       <div class="promo-card glass-card" style="max-width: 600px; margin: 0 auto; padding: 3rem 2rem;">
         
-        <!-- MailerLite Form -->
-        <div id="mlb2-43465993" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-43465993">
-          <div class="ml-form-align-center">
-            <div class="ml-form-embedWrapper embedForm">
-              
-              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-                <div class="ml-form-embedContent">
-                  <h2>Join the Waitlist</h2>
-                  <p>Together is currently in private development. Subscribe to get early beta access, neurodivergent productivity tips, and launch updates.</p>
-                </div>
-                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2378130/forms/192326054455543186/subscribe" data-code="" method="post" target="_blank">
-                  <div class="ml-form-formContent">
-                    <div class="ml-form-fieldRow ml-last-item">
-                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                        <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Email address" autocomplete="email" required>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="ml-form-embedPermissions">
-                    <div class="ml-form-embedPermissionsContent default privacy-policy">
-                      <p>You can unsubscribe anytime. For more details, review our <a href="docs/privacy-policy.html">Privacy Policy</a>.</p>
-                    </div>
-                  </div>
-
-                  <input type="hidden" name="ml-submit" value="1">
-
-                  <div class="ml-form-embedSubmit">
-                    <button type="submit" class="primary">Subscribe for News</button>
-                    <button disabled="disabled" style="display: none;" type="button" class="loading">
-                      <div class="ml-form-embedSubmitLoad"></div>
-                      <span class="sr-only">Loading...</span>
-                    </button>
-                  </div>
-                  
-                  <input type="hidden" name="anticsrf" value="true">
-                </form>
-              </div>
-
-              <div class="ml-form-successBody row-success" style="display: none">
-                <div class="ml-form-successContent">
-                  <h2>You're on the list!</h2>
-                  <p>Thanks for supporting Together. We'll be in touch as soon as the first beta invitations are sent out.</p>
-                </div>
-              </div>
-
-            </div>
+        <div id="sib-form-container">
+          <div id="error-message" class="sib-form-message-panel">
+            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
           </div>
+          <div id="success-message" class="sib-form-message-panel">
+            <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+          </div>
+          <form id="sib-form" method="POST" action="https://6483f87d.sibforms.com/serve/MUIFAD8k83kvRYm7gn216YeTWNeowd9MBQwi0xmoFut5Sd5Qn3j9ONDwNIzEPbBuXzaO-1LH05n4aVvLf91POwBiwSFBCPTIF42Wr05qA7g-U333EwgDV_nvA6lMUtcsG0g_e0yC5_Si9RoEbbXnslJhNjkohZUpVsWo2U9yrQk_qMzWENNDMnDQFYiZBhEqJef1pZO61TPH-gV83Q==" data-type="subscription">
+            <h2>Join the Waitlist!</h2>
+            <p>Together is currently in development. Subscribe to get early beta access and launch updates.</p>
+            <div class="sib-input sib-form-block">
+              <div class="form__entry entry_block">
+                <div class="entry__field">
+                  <input type="text" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="Email address" data-required="true" required>
+                </div>
+                <label class="entry__error entry__error--primary"></label>
+                <label class="entry__specification">You can unsubscribe anytime. For more details, review our <a href="docs/privacy-policy.html">Privacy Policy</a>.</label>
+              </div>
+            </div>
+            <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">Subscribe for News</button>
+            <div class="sib-captcha sib-form-block">
+              <div class="form__entry entry_block">
+                <div class="cf-turnstile g-recaptcha" data-sitekey="0x4AAAAAAD74COzMSdP6jZ-T" id="sib-captcha" data-callback="handleCaptchaResponse" data-language="en"></div>
+                <label class="entry__error entry__error--primary"></label>
+              </div>
+            </div>
+            <input type="text" name="email_address_check" value="" class="input--hidden">
+            <input type="hidden" name="locale" value="en">
+          </form>
         </div>
 
       </div>
@@ -982,15 +873,29 @@
     });
   </script>
 
-  <!-- MailerLite Form Integrations -->
   <script>
-    function ml_webform_success_43465993() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-43465993 .row-success').show();
-      $('.ml-subscribe-form-43465993 .row-form').hide();
+    function handleCaptchaResponse() {
+      document.getElementById('sib-captcha').dispatchEvent(new Event('captchaChange'));
+      window.grecaptcha = window.turnstile;
     }
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
+    window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank.';
+    window.GENERIC_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
+    window.INVALID_NUMBER = 'The information provided is invalid. Please review the field format and try again.';
+    window.INVALID_DATE = 'Please enter a valid date';
+    window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
+    window.translation = { common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected'
+    }};
+    var AUTOHIDE = false;
   </script>
-  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script>
     // Lightbox modal logic for expandable showcase images
     document.addEventListener('DOMContentLoaded', () => {
